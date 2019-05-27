@@ -10,5 +10,17 @@ Run `python -m markdown_external_link_finder` in the directory you want to searc
 
 This outputs a list of URLs, one per line.
 
+## Python API
+`extract_markdown_links` takes a list of filenames and returns a list of URLs.
+
+Example usage:
+
+```python
+from markdown_external_link_finder.extract import extract_markdown_links
+
+for url in extract_markdown_links(['/path/to/file.md']):
+    print(url)
+```
+
 ## Licence
 MIT
