@@ -1,4 +1,5 @@
 # Markdown external link finder
+[![CircleCI](https://circleci.com/gh/MatMoore/markdown-external-link-finder.svg?style=svg)](https://circleci.com/gh/MatMoore/markdown-external-link-finder)
 
 This tool looks for external links in markdown files.
 
