@@ -1,4 +1,4 @@
-from markdown_external_link_finder import url_is_absolute
+from markdown_external_link_finder.util import url_is_absolute
 
 
 def test_relative_scheme():
