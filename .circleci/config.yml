@@ -64,7 +64,7 @@ workflows:
           filters:  # required since `deploy` has tag filters AND requires `build`
             tags:
               only: /.*/
-      - deploy:
+      - publish:
           requires:
             - build-python-3.6
           filters:
