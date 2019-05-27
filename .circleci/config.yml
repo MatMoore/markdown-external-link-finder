@@ -37,14 +37,6 @@ jobs:
       - checkout
 
       - run:
-          name: init .pypirc
-          command: |
-            echo -e "[pypi]" >> ~/.pypirc
-            echo -e "username = MatMoore" >> ~/.pypirc
-            echo -e "password = $PYPI_PASSWORD" >> ~/.pypirc
-            echo -e "repository = https://test.pypi.org/legacy/"
-
-      - run:
           name: create packages
           command: |
             python3 -m venv venv
