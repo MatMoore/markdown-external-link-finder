@@ -3,8 +3,6 @@
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
 version: 2
-orbs:
-  python: dialogue/python@1.1.0
 jobs:
   build-python-3.6:
     docker:
@@ -39,7 +37,7 @@ jobs:
       - checkout
 
       - run:
-          name: create packages and upload to test pypi
+          name: create packages and upload to pypi
           command: |
             python3 -m venv venv
             . venv/bin/activate
